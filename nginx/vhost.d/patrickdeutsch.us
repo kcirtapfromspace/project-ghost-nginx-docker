@@ -8,12 +8,12 @@ location ^~ /.well-known/acme-challenge/ {
 }
 ## End of configuration add by letsencrypt container
 add_header X-Frame-Options "SAMEORIGIN";
-add_header "X-Xss-Protection" "1; mode=block; report=https://patrickdeutsch.report-uri.com/r/d/xss/enforce";
+add_header "X-Xss-Protection" "1; mode=block;
 add_header X-Content-Type-Options "nosniff";
 add_header Referrer-Policy "no-referrer-when-downgrade";
-add_header "Content-Security-Policy-Report-Only" "default-src 'none'; form-action 'none'; frame-ancestors 'none'; report-uri https://patrickdeutsch.report-uri.com/r/d/csp/wizard";
-add_header "Report-To" "{\"group\":\"default\",\"max_age\":31536000,\"endpoints\":[{\"url\":\"https://patrickdeutsch.report-uri.com/a/d/g\"}],\"include_subdomains\":true}";
-add_header "NEL" "{\"report_to\":\"default\",\"max_age\":31536000,\"include_subdomains\":true}";
-add_header "Expect-CT" "max-age=604800, report-uri=\"https://patrickdeutsch.report-uri.com/r/d/ct/enforce\"";
+add_header Content-Security-Policy-Report-Only "default-src 'none'; form-action 'none'; frame-ancestors 'none'; report-uri https://patrickdeutsch.report-uri.com/r/d/csp/wizard";
+add_header Report-To "{\"group\":\"default\",\"max_age\":31536000,\"endpoints\":[{\"url\":\"https://patrickdeutsch.report-uri.com/a/d/g\"}],\"include_subdomains\":true}";
+add_header NEL "{\"report_to\":\"default\",\"max_age\":31536000,\"include_subdomains\":true}";
+add_header Expect-CT "max-age=604800, report-uri=\"https://patrickdeutsch.report-uri.com/r/d/ct/enforce\"";
 add_header Feature-Policy: vibrate 'self'; usermedia *; sync-xhr 'self' https://patrickdeutsch.us;
 server_tokens off;
