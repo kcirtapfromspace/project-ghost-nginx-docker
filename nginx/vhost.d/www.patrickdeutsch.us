@@ -1,0 +1,6 @@
+server {
+        server_name www.patrickdeutsch.us;
+        listen 80 443;
+        access_log /var/log/nginx/access.log vhost;
+        return 301 https://patrickdeutsch.us$request_uri;
+}
