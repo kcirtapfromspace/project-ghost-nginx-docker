@@ -35,7 +35,6 @@ services:
     environment:
       - url=https://patrickdeutsch.us
       - SSL_POLICY=Mozilla-Modern
-      - ENABLE_IPV6=true
       - VIRTUAL_HOST=patrickdeutsch.us
       - LETSENCRYPT_HOST=patrickdeutsch.us
       - LETSENCRYPT_EMAIL=patrickdeutsch@gmail.com
