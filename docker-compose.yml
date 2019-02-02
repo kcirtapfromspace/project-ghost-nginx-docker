@@ -29,14 +29,11 @@ services:
     depends_on:
       - "nginx-proxy"
     ports:
-      - 8080:2368
+      - 127.0.0.1:8080:2368
     volumes:
       - ./blog/data/ghost:/var/lib/ghost/content
     environment:
       - url=https://patrickdeutsch.us
-      - SSL_POLICY=Mozilla-Modern
-      - ENABLE_IPV6=true
-      - DEFAULT_HOST=patrickdeutsch.us
       - VIRTUAL_HOST=patrickdeutsch.us
       - LETSENCRYPT_HOST=patrickdeutsch.us
       - LETSENCRYPT_EMAIL=patrickdeutsch@gmail.com
