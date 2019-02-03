@@ -1,0 +1,4 @@
+server {
+  server_name www.patrickdeutsch.us;
+  return 301 https://patrickdeutsch.us$request_uri?;
+}
