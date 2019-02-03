@@ -37,7 +37,7 @@ services:
       - SSL_POLICY=Mozilla-Modern
       - ENABLE_IPV6=true
       - DEFAULT_HOST=patrickdeutsch.us
-      - VIRTUAL_HOST=patrickdeutsch.us
+      - VIRTUAL_HOST=patrickdeutsch.us *.patrickdeutsch.us
       - LETSENCRYPT_HOST=patrickdeutsch.us
       - LETSENCRYPT_EMAIL=patrickdeutsch@gmail.com
 volumes:
